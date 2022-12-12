@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>JS API Reader</title>
+    <link rel="stylesheet" href="css/style_tab.css">
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+</head>
+<body>
+    <div class="root">
+        <h1 class="h1stl">Тестовая страница</h1>
+        <div class="tabs">
+            <div class="tabs__nav">
+                <button class="tabs__nav-btn" type="button" data-tab="#tab_1">Анимация 3D</button>
+                <button class="tabs__nav-btn" type="button" data-tab="#tab_2">Информация</button>
+                <button class="tabs__nav-btn" type="button" data-tab="#tab_3">Картинка</button>
+            </div>
+            <div class="tabs__content">
+                <div class="tabs__item" id="tab_1">
+                    <canvas id="frontBuffer" width="160" height="100"></canvas>
+                    <button class="floating-btn" id="modal-btn" onclick="addCanvasStyle()">Кликни меня</button>
+                </div>
+
+                <div class="tabs__item" id="tab_2"></div>
+
+                <div class="tabs__item" id="tab_3">
+                    <div class="randomContainer">
+                        <div class="card">
+                            <img src="img/0_7c779_5df17311_orig.jpg" alt="pic" class="imgRandom"/>
+                        </div>
+                        <button class="btnNextPic" type="button">Следующая</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="JS/babylon.math.js"></script>
+    <script src="JS/SoftEngine.js"></script>
+    <script src="JS/tabControl.js"></script>
+    <script src="JS/main.js"></script>
+</body>
+</html>
